@@ -6,8 +6,8 @@ var condCollection =fileModel.getCondominios();
 
 router.get('/',function(req, res){
     res.json({
-        "uno":"dos",
-        "tres":"cuatro"
+        "entity":"dos",
+        "version":"cuatro"
     });
 });
 

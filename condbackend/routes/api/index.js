@@ -3,6 +3,6 @@ var router = express.Router();
 
 var condominiosApiRoutes= require('./condominios/index');
 
-router.use('/cnd', condominiosApiRoutes );
+router.use('/cnd',condominiosApiRoutes);
 
 module.exports=router;

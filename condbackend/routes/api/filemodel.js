@@ -2,7 +2,7 @@ var fs=require('fs');
 
 var exportObject={};
 
-var filePath="model_data.json";
+var filePath="condominios.json";
 
 var data={
     condominios:[]
@@ -29,7 +29,7 @@ exportObject.getCondominios=function(){
 }
 
 exportObject.setCondominios=function(newCondominos,handler){
-    var newData=Object.assign({},data,{condominios:newCondominos});
+    var newData=Object.assign({},data,{condominios: newCondominos});
     exportObject.setData(newData,function(err,success){
         if(err){
             handler(err, false);
